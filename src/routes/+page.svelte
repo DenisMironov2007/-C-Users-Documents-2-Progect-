@@ -5,7 +5,7 @@
 <div class="container">
 	<div class="info">
 		<div class="animate-background">
-			<div class="container info-contayner">
+			<div class="container info-container">
 				<div class="info-text">
 					<h1>
 						<p class="animate-text-1">What can this site do?</p>
@@ -40,7 +40,7 @@
 		text-align: left;
 		align-items: start;
 	}
-	.conteiner {
+	.container {
 		max-width: 1400px;
 		margin: 190px 0 0 2.5rem;
 	}

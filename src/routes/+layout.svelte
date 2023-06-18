@@ -2,10 +2,9 @@
 	<div class="nav-container">
 		<a href="/" class="nav-logo">Uncnown</a>
 		<div class="nav-links">
-			<a href="/about" class="link">About Me</a>
-			<a href="/blog" class="link">Blog</a>
-			<a href="/projects" class="link">Project</a>
-			<a href="/contact" class="link">Contacts</a>
+			{#each nav as link}
+				<a href={link.href} class="link">{link.title}</a>
+			{/each}
 		</div>
 	</div>
 </nav>
@@ -13,6 +12,31 @@
 	<!--Pages will be injected below-->
 	<slot></slot>
 </div>
+
+<script>
+	const nav = [
+		{ 
+			title: 'About me',
+			href: '/about'
+		},
+		{
+			title: 'Blog',
+			href: '/blog'
+		},
+		{
+			title: 'Project',
+			href: '/projects'
+		},
+		{
+			title: 'Contact',
+			href: '/contact'
+		},
+		{
+			title: 'Temp',
+			href: '/temp'
+		}
+	]
+</script>
 
 <style>
 	.container {
