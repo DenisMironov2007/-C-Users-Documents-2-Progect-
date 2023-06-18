@@ -32,7 +32,7 @@
 			href: '/contact'
 		},
 		{
-			title: 'Temp',
+			title: 'Settings',
 			href: '/temp'
 		}
 	]
