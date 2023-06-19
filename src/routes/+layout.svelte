@@ -3,7 +3,9 @@
 		<a href="/" class="nav-logo">Uncnown</a>
 		<div class="nav-links">
 			{#each nav as link}
+			{#if link.isShow}
 				<a href={link.href} class="link">{link.title}</a>
+			{/if}
 			{/each}
 		</div>
 	</div>
@@ -17,23 +19,33 @@
 	const nav = [
 		{ 
 			title: 'About me',
-			href: '/about'
+			href: '/about',
+			isShow: true
 		},
 		{
 			title: 'Blog',
-			href: '/blog'
+			href: '/blog',
+			isShow: true
 		},
 		{
 			title: 'Project',
-			href: '/projects'
+			href: '/projects',
+			isShow: true
 		},
 		{
 			title: 'Contact',
-			href: '/contact'
+			href: '/contact',
+			isShow: true
 		},
 		{
 			title: 'Settings',
-			href: '/temp'
+			href: '/temp',
+			isShow: true
+		},
+		{
+			title: 'Problems_500',
+			href: '/ohibka',
+			isShow: false
 		}
 	]
 </script>
