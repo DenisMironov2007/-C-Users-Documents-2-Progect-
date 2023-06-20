@@ -18,7 +18,7 @@
 </div>
 
 <script>
-	import {routes} from '../projects/routes';
+	import {routes} from './routes.js';
 </script>
 
 <style>
